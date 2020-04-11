@@ -59,7 +59,7 @@ let map = L.map('mapid', {
 });
 
 //pass our baseMaps to layers and add it to map also add the overlays
-L.control.layers(baseMaps, overlays).addTo(map);
+L.control.layers(baseMaps, overlays, {collapsed:false}).addTo(map);
 
 //USGS past7days earthquake geojson data is fetched from below url
 let earthquake_past7days_url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
